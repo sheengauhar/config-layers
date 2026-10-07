@@ -1,0 +1,22 @@
+[project]
+name = "config-layers"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "24f2006930", email = "24f2006930@ds.study.iitm.ac.in" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.142.2",
+    "python-dotenv>=1.2.4",
+    "pyyaml>=6.0.3",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+config-layers = "config_layers:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
